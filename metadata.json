@@ -1,0 +1,6 @@
+{
+  "name": "Jimena Amaya - Relaciones Inmobiliarias",
+  "description": "Inmobiliaria boutique en Buenos Aires. Tasaciones, Curaduría, Venta y Alquiler de Propiedades Exclusivas en Recoleta, Palermo, Belgrano y Zona Norte.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

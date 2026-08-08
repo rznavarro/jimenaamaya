@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ladrillo: #B84A39;
+    --color-ladrillo-dark: #973A2B;
+    --color-hueso: #FAF8F5;
+    --color-hueso-muted: #ECE8DF;
+    --color-petroleo: #1A3837;
+    --color-petroleo-dark: #102423;
+    --color-oro: #C89B51;
+    --color-oro-hover: #B2873F;
+  }
+
+  body {
+    background-color: var(--color-hueso);
+    color: var(--color-petroleo);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Brand Typography Aliases */
+.font-louize {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-nikkei {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.font-goudy {
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+/* Brand Custom Classes */
+.bg-ladrillo { background-color: var(--color-ladrillo); }
+.bg-ladrillo-dark { background-color: var(--color-ladrillo-dark); }
+.bg-hueso { background-color: var(--color-hueso); }
+.bg-hueso-muted { background-color: var(--color-hueso-muted); }
+.bg-petroleo { background-color: var(--color-petroleo); }
+.bg-petroleo-dark { background-color: var(--color-petroleo-dark); }
+.bg-oro { background-color: var(--color-oro); }
+
+.text-ladrillo { color: var(--color-ladrillo); }
+.text-hueso { color: var(--color-hueso); }
+.text-petroleo { color: var(--color-petroleo); }
+.text-oro { color: var(--color-oro); }
+
+.border-ladrillo { border-color: var(--color-ladrillo); }
+.border-hueso { border-color: var(--color-hueso); }
+.border-petroleo { border-color: var(--color-petroleo); }
+.border-oro { border-color: var(--color-oro); }
+
+/* Minimalist Form Inputs */
+.border-bottom-hueso {
+  border-bottom: 1px solid rgba(250, 248, 245, 0.4);
+  background: transparent;
+  color: var(--color-hueso);
+}
+
+.border-bottom-hueso:focus {
+  border-bottom-color: var(--color-oro);
+  outline: none;
+}
+
+.border-bottom-petroleo {
+  border-bottom: 1px solid rgba(26, 56, 55, 0.3);
+  background: transparent;
+  color: var(--color-petroleo);
+}
+
+.border-bottom-petroleo:focus {
+  border-bottom-color: var(--color-ladrillo);
+  outline: none;
+}
+
+/* Search Button Brand Pattern */
+.search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.search-btn .search-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover .search-icon {
+  transform: translateX(4px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-hueso);
+}
+::-webkit-scrollbar-thumb {
+  background: #C0B7A8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ladrillo);
+}
+
